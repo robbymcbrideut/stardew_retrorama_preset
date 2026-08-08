@@ -1,0 +1,117 @@
+/* Target the main editor area for both Editing and Reading views */
+.markdown-source-view.mod-cm6 .cm-sizer,
+.markdown-preview-view {
+    /* Stardew Valley Menu Parchment Background */
+    background-color: #ffebc0 !important;
+    color: #4a2711 !important; /* Rich dark brown text for high contrast */
+    
+    /* Stardew Wooden Frame (Double border effect with dark outer shadow) */
+    border: 5px solid #8f4d1e !important;
+    outline: 3px solid #4a2711 !important; /* Outer wooden rim */
+    border-radius: 8px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), inset 0 0 0 2px #ffc885 !important; /* Inner highlighted edge */
+    
+    /* Layout positioning */
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    padding: 30px !important;
+}
+
+/* Line highlight for active line in editor */
+.cm-active {
+    background-color: rgba(184, 115, 51, 0.15) !important;
+}
+
+/* Stardew Gold Note Title */
+.inline-title {
+    color: #8b4513 !important; /* Deep wood brown header */
+    text-shadow: 1px 1px 0px #ffe1a8, 2px 2px 0px #4a2711 !important;
+    font-weight: bold !important;
+}
+
+/* General text & headers contrast adjustments for the light background */
+.markdown-rendered h1, 
+.markdown-rendered h2, 
+.markdown-rendered h3,
+.cm-header {
+    color: #5c2c0c !important;
+}
+
+.markdown-rendered p, 
+.cm-line {
+    color: #3b1e0b !important;
+}
+/* Apply Stardew background image to the main workspace (Excludes Canvas cards) */
+body:not(.is-canvas) {
+  /* Replace URL below with your preferred Stardew wallpaper/image */
+  */
+
+  /* Set background image on the main container (Excludes Canvas view) */
+  body:not(.is-canvas) .app-container {
+    background-image: url('https://raw.githubusercontent.com/robbymcbrideut/stardew_retrorama_preset/main/stardew_backdrop.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+  }
+
+  /* Punch holes through Obsidian's default dark/light panels so the image shows through */
+  body:not(.is-canvas) .workspace,
+  body:not(.is-canvas) .workspace-split,
+  body:not(.is-canvas) .workspace-tabs,
+  body:not(.is-canvas) .workspace-leaf,
+  body:not(.is-canvas) .workspace-leaf-content,
+  body:not(.is-canvas) .view-content,
+  body:not(.is-canvas) .cm-editor,
+  body:not(.is-canvas) .markdown-source-view {
+      background-color: transparent !important;
+}
+
+/* Semi-transparent parchment style for the editor box so the background shows around/behind it */
+.workspace-leaf:not(.is-canvas) .markdown-source-view.mod-cm6 .cm-sizer,
+.workspace-leaf:not(.is-canvas) .markdown-preview-view {
+    /* Slightly translucent warm parchment background */
+    background-color: rgba(255, 235, 192, 0.88) !important;
+    color: #4a2711 !important;
+    
+    /* Stardew Wooden Frame Frame */
+    border: 5px solid #8f4d1e !important;
+    outline: 3px solid #4a2711 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), inset 0 0 0 2px #ffc885 !important;
+    
+    /* Center the note as a dialogue/menu card in the middle of the screen */
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    padding: 30px !important;
+}
+
+/* Make workspace background fully transparent behind the editor box */
+.workspace-leaf:not(.is-canvas) .cm-editor,
+.workspace-leaf:not(.is-canvas) .markdown-source-view {
+    background-color: transparent !important;
+}
+
+/* Line highlight for active line */
+.workspace-leaf:not(.is-canvas) .cm-active {
+    background-color: rgba(184, 115, 51, 0.15) !important;
+}
+
+/* Stardew Header Styling */
+.workspace-leaf:not(.is-canvas) .inline-title {
+    color: #8b4513 !important;
+    text-shadow: 1px 1px 0px #ffe1a8, 2px 2px 0px #4a2711 !important;
+    font-weight: bold !important;
+}
+
+.workspace-leaf:not(.is-canvas) .markdown-rendered h1,
+.workspace-leaf:not(.is-canvas) .markdown-rendered h2,
+.workspace-leaf:not(.is-canvas) .markdown-rendered h3,
+.workspace-leaf:not(.is-canvas) .cm-header {
+    color: #5c2c0c !important;
+}
+
+.workspace-leaf:not(.is-canvas) .markdown-rendered p,
+.workspace-leaf:not(.is-canvas) .cm-line {
+    color: #3b1e0b !important;
+}
