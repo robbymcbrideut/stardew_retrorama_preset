@@ -17,6 +17,9 @@ https://images.steamusercontent.com/ugc/253713388282846712/BA4AEF53B96D5C105AA1A
 Darkmode Image:
 https://c4.wallpaperflare.com/wallpaper/91/36/840/stardew-valley-digital-art-chickens-night-daylight-hd-wallpaper-preview.jpg
 
-
+css snippet for text box in the github:
 
 https://github.com/robbymcbrideut/stardew_retrorama_preset
+
+obsidian has a great article on how to install snippets
+https://obsidian.md/help/snippets
