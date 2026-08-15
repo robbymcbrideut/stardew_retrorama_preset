@@ -1,6 +1,8 @@
 # stardew_retrorama_preset
 this is a preset for the retrorama theme by emarpiee and my own custom snippet
 
+look up 'retrorama' in the theme store or use emarpiee's GitHub below
+
 emarpiee's github:  https://github.com/emarpiee
 
 Make sure you reset the retrorama settings to default before importing.
